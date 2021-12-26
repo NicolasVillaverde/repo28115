@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Villaverde Arquitectura</title>
+</head>
+<body>
+    <div class="container__contacto">
+        <header class="header">
+            <img class="header__logo" src="../assets/img/logo.jpg" alt="logo">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="../index.html">Inicio</a></li>
+                    <li class="header__item"><a class="header__link" href="../secciones/equipo.html">Nuestro Equipo</a></li>
+                    <li class="header__item"><a class="header__link" href="../secciones/proyectos.html">Proyectos</a>
+                        <ul class="header__sublist">
+                            <li class="header__subitem"><a href="./proyectos/interiorismo.html"">Interiorismo</a></li>
+                            <li class="header__subitem"><a href="./proyectos/construccion.html">Construcción</a></li>
+                            <li class="header__subitem"><a href="./proyectos/home-staging.html">Home Staging</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__item"><a class="header__link" href="../secciones/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="contacto__section contacto">
+            <div class="contacto__texto">
+                <h2 class="contacto__tittle">Envianos un mensaje!</h2>
+                <p class="contacto__description">Nuesto equipo se pondrá en contacto a la brevedad.</p>
+            </div>
+            <div class="contacto__form">
+                <form class="contacto__form--item" action="#" method="GET">
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="user_name" id="name" placeholder="Nombre">
+                    </div>
+                    <div>
+                        <label for="lastname">Apellido</label>
+                        <input type="text" name="user_lastname" id="name" placeholder="Apellido">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="user-email" id="name" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="consulta">Introduzca su consulta</label>
+                        <input type="text" name="user-consulta" id="consulta" maxlength="100" placeholder="Consulta">
+                    </div>
+                    <input class="contacto__button" type="submit" value="Enviar">
+                    <input class="contacto__button" type="reset" value="Borrar">
+                </form>
+            </div>
+        </section>
+        <footer class="footer__section">
+            <img class="footer__logo" src="../assets/img/logo.jpg" alt="logo">
+            <div class="footer__links">
+                <a href="http://www.facebook.com/">Facebook</a>
+                <a href="http://www.Instagram.com/">Instagram</a>
+            </div>        
+        </footer>
+    </div>
+</body>
+</html>
+
