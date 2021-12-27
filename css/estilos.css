@@ -436,8 +436,13 @@
     color: white;
     padding: 1rem;
     font-size: 1rem;
+    transition: background-color 0.2s;
 }
 
+.proyectos__link:hover {
+    background-color: lightblue;
+    color: black;
+}
 
 
 
@@ -537,7 +542,7 @@
 
 /* -----------------CONSTRUCCION-------------*/
 .construccion__section{
-    min-height: 62vh;
+    min-git height: 62vh;
     display: flex;
     flex-direction: row;
     gap: 10%;

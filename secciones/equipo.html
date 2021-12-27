@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Villaverde Arquitectura</title>
 </head>
 <body>
@@ -28,7 +30,7 @@
         </header>
         <section class="equipo__section equipo">
             <article class="equipo__integrantes">
-                <div class="equipo__image">
+                <div class="equipo__image" data-aos="fade-right">
                     <img class="equipo__image--item" src="../assets/img/integrante1.jpg"  alt="persona">
                 </div>
                 <div class="equipo__texto">
@@ -37,7 +39,7 @@
                 </div>
             </article>
             <article class="equipo__integrantes reverse__row">
-                <div class="equipo__image">
+                <div class="equipo__image" data-aos="fade-left">
                     <img class="equipo__image--item" src="../assets/img/integrante2.jpg" alt="persona">
                 </div>
                 <div class="equipo__texto">
@@ -46,7 +48,7 @@
                 </div>
             </article>
             <article class="equipo__integrantes">
-                <div class="equipo__image">
+                <div class="equipo__image" data-aos="fade-right">
                     <img class="equipo__image--item" src="../assets/img/integrante3.jpg" alt="persona">
                 </div>
                 <div class="equipo__texto">
@@ -63,5 +65,8 @@
             </div>        
         </footer>
     </div>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

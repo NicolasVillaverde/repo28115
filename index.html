@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villaverde Arquitectura</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="container__index">
@@ -27,26 +29,26 @@
             </nav>
         </header>
         <section class="hero__section hero">
-            <article class="hero__article">
+            <article class="hero__article" data-aos="fade-up" data-aos-duration="1000">
                 <h1 class="hero__tittle">NV+ARQ.</h1>
                 <p class="hero__slogan">Impulsá tu proyecto!</p>
                 <a class="hero__button" href="./secciones/contacto.html">Póngase en contacto</a>
             </article>
         </section> <!-- HERO-->
-        <section class="servicios__section servicios">
-            <article class="servicios__article">
+        <section class="servicios__section servicios" data-aos="flip-up" data-aos-delay="300" data-aos-duration="500" >
+            <article class="servicios__article" >
                 <img class="servicios__image" src="./assets/img/interiorismo-icon.png" alt="">
                 <h2 class="servicios__tittle">Interiorismo</h2>
                 <p class="servicios__description">El proyecto también se manifiesta a través de los detalles en el diseño interior.</p>
                 <a class="servicios__link" href="./secciones/proyectos/interiorismo.html">Ver más</a>
             </article>
-            <article class="servicios__article">
+            <article class="servicios__article" >
                 <img class="servicios__image" src="./assets/img/construccion-icon.png" alt="">
                 <h2 class="servicios__tittle">Construcción</h2>
                 <p class="servicios__description">Construimos con altos standard de calidad, con grupos especializados para cada rubro.</p>
                 <a class="servicios__link" href="./secciones/proyectos/construccion.html">Ver más</a>
             </article>
-            <article class="servicios__article">
+            <article class="servicios__article" >
                 <img class="servicios__image" src="./assets/img/home-staging-icon.png" alt="">
                 <h2 class="servicios__tittle">Home Staging</h2>
                 <p class="servicios__description">Saque el máximo partido a su propiedad y atraiga a sus posibles compradores.</p>
@@ -80,6 +82,9 @@
             </div>        
         </footer>
     </div>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
 
