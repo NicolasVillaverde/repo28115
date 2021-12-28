@@ -5,63 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Villaverde Arquitectura</title>
 </head>
 <body>
-    <div class="container__contacto">
-        <header class="header">
-            <img class="header__logo" src="../assets/img/Logo.jpg" alt="logo">
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item"><a class="header__link" href="../index.html">Inicio</a></li>
-                    <li class="header__item"><a class="header__link" href="../secciones/equipo.html">Nuestro Equipo</a></li>
-                    <li class="header__item"><a class="header__link" href="../secciones/proyectos.html">Proyectos</a>
-                        <ul class="header__sublist">
-                            <li class="header__subitem"><a href="./proyectos/interiorismo.html"">Interiorismo</a></li>
-                            <li class="header__subitem"><a href="./proyectos/construccion.html">Construcción</a></li>
-                            <li class="header__subitem"><a href="./proyectos/home-staging.html">Home Staging</a></li>
-                        </ul>
-                    </li>
-                    <li class="header__item"><a class="header__link" href="../secciones/contacto.html">Contacto</a></li>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"><img class="header__logo" src="../assets/img/logotipomain.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../secciones/equipo.html">Nuestro Equipo</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Proyectos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="../secciones/proyectos/interiorismo.html">Interiorismo</a></li>
+                    <li><a class="dropdown-item" href="../secciones/proyectos/construccion.html">Construcción</a></li>                   
+                    <li><a class="dropdown-item" href="../secciones/proyectos/home-staging.html">Home Staging</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../secciones/contacto.html">Contacto</a>
+                  </li>
+            </ul>            
+          </div>
+        </div>
+    </nav>
+    
+    <div class="contacto__section" style="min-height: 95vh;">
+        <div class="container d-flex align-items-center" style="min-height: 82vh;">
+            <div class="row col-12 d-flex align-items-center ">
+                <div class="col-lg-6">
+                    <h2 class="display-4">Envianos un mensaje!</h2>
+                    <p>Nuestro equipo se pondrá en contacto a la brevedad.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form action="#" method="GET">
+                        <div>
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div>
+                            <label for="lastname" class="form-label">Apellido</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div>
+                            <label for="consulta" class="form-label">Introduzca su consulta</label><br/>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <div>
+                            <input class="btn btn-info my-2" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4">
+                    <img class="header__logo" src="../assets/img/Logotipo.png" alt="logo">           
+                </div>
+                <ul class="nav col-md-4 justify-content-end d-flex list-unstyled">
+                    <li><a class="px-5" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>  
                 </ul>
-            </nav>
-        </header>
-        <section class="contacto__section contacto">
-            <div class="contacto__texto">
-                <h2 class="contacto__tittle">Envianos un mensaje!</h2>
-                <p class="contacto__description">Nuesto equipo se pondrá en contacto a la brevedad.</p>
-            </div>
-            <div class="contacto__form">
-                <form class="contacto__form--item" action="#" method="GET">
-                    <div>
-                        <label for="name">Nombre</label>
-                        <input type="text" name="user_name" id="name" placeholder="Nombre">
-                    </div>
-                    <div>
-                        <label for="lastname">Apellido</label>
-                        <input type="text" name="user_lastname" id="name" placeholder="Apellido">
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="user-email" id="name" placeholder="Email">
-                    </div>
-                    <div>
-                        <label for="consulta">Introduzca su consulta</label>
-                        <input type="text" name="user-consulta" id="consulta" maxlength="100" placeholder="Consulta">
-                    </div>
-                    <input class="contacto__button" type="submit" value="Enviar">
-                    <input class="contacto__button" type="reset" value="Borrar">
-                </form>
-            </div>
-        </section>
-        <footer class="footer__section">
-            <img class="footer__logo" src="../assets/img/Logo.jpg" alt="logo">
-            <div class="footer__links">
-                <a href="http://www.facebook.com/">Facebook</a>
-                <a href="http://www.Instagram.com/">Instagram</a>
-            </div>        
-        </footer>
+            </footer>
+        </div>            
     </div>
+
+
+
+    
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
 
