@@ -7,11 +7,34 @@
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    height: 95vh;
+    height: 100vh;
 }
 
 .hero__text{
-    padding-bottom: 10rem;
+    padding-bottom: 15rem;
+}
+
+.servicios__section{
+    margin-top: -10%;
+}
+
+.card{
+    border-radius: 1rem;
+    box-shadow: 8px 9px 19px -3px rgba(0,0,0,0.15);
+}
+
+.card:hover{  
+    transform: scale(1.1)   
+}
+
+.card-img-top{
+
+}
+
+.servicios__button{
+    background-color: #00A9C0;
+    text-transform: uppercase;
+    color: white;
 }
 
 .testimonio__section {
@@ -27,13 +50,52 @@
     display: none;
 }
 
+.tarjeta__servicio{
+    background-color: #E6F4F1;
+    margin-left: -5%;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 8px 9px 19px -3px rgba(0,0,0,0.15);
+}
 
-@media screen and (max-width: 767px) {
+.imagen__construccion{
+    height: 25rem;
+    background: url(../assets/img/construccion.jpg) no-repeat center / cover;
+    border-radius: 8px;
+}
+
+.imagen__interiorismo{
+    height: 25rem;
+    background: url(../assets/img/interiorismo.jpg) no-repeat center / cover;
+    border-radius: 8px;
+}
+
+.imagen__homestaging{
+    height: 25rem;
+    background: url(../assets/img/homestaging.jpg) no-repeat center / cover;
+    border-radius: 8px;
+}
+
+
+.ejemplo__servicio:hover{  
+    transform: scale(1.1)   
+}
+
+
+
+@media screen and (max-width: 768px) {
     .small__show{
         display: unset;
     }
 
     .large__show{
         display: none;
+    }
+
+    .tarjeta__servicio{
+        margin-left: auto;
+        margin-top: -10%;
+        width: 90vw;
+
     }
 }
