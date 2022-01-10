@@ -1,8 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.nav-item {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+.hero__text {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 400;
+}
+
+.card-body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+.card-body > p {
+  font-weight: 300;
+}
+
+.testimonio__section {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+.testimonio__section > p {
+  font-weight: 300;
+}
+
+.ubicacion__section {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+.ubicacion__section > p {
+  font-weight: 300;
 }
 
 .header__logo {
@@ -45,6 +84,33 @@
 
 .testimonio__section {
   background-color: #cccccc;
+}
+
+.tarjeta__servicio {
+  background-color: #E6F4F1;
+  margin-left: -5%;
+  border-radius: 8px;
+  padding: 1rem;
+  -webkit-box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
+          box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
+}
+
+.imagen__interiorismo {
+  height: 25rem;
+  background: url(../assets/img/interiorismo.jpg) no-repeat center/cover;
+  border-radius: 8px;
+}
+
+.imagen__construccion {
+  height: 25rem;
+  background: url(../assets/img/construccion.jpg) no-repeat center/cover;
+  border-radius: 8px;
+}
+
+.imagen__homestaging {
+  height: 25rem;
+  background: url(../assets/img/homestaging.jpg) no-repeat center/cover;
+  border-radius: 8px;
 }
 
 .small__show {
