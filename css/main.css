@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header__logo {
+  height: 20px;
+}
+
+.hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.9))), url("../assets/img/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url("../assets/img/hero.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.hero__text {
+  padding-bottom: 15rem;
+}
+
+.servicios__section {
+  margin-top: -10%;
+}
+
+.card {
+  border-radius: 1rem;
+  -webkit-box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
+          box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.servicios__button {
+  background-color: #00A9C0;
+  text-transform: uppercase;
+  color: white;
+}
+
+.testimonio__section {
+  background-color: #cccccc;
+}
+
+.small__show {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .small__show {
+    display: unset;
+  }
+  .large__show {
+    display: none;
+  }
+  .tarjeta__servicio {
+    margin-left: auto;
+    margin-top: -10%;
+    width: 90vw;
+  }
+}
+/*# sourceMappingURL=main.css.map */

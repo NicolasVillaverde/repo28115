@@ -1,0 +1,17 @@
+.servicios__section{
+    margin-top: -10%;
+}
+
+.card{
+    border-radius: 1rem;
+    box-shadow: 8px 9px 19px -3px rgba(0,0,0,0.15);
+    &:hover{
+        transform: scale(1.1)   
+    }
+}
+
+.servicios__button{
+    background-color: #00A9C0;
+    text-transform: uppercase;
+    color: white;
+}
