@@ -11,7 +11,7 @@
 }
 
 .servicios__button{
-    background-color: $colorPrimario;
+    background-color: map-get($palette , primario);
     text-transform: uppercase;
     color: white;
 }

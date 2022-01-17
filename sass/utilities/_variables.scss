@@ -1,3 +1,15 @@
-$colorPrimario: #00A9C0 ;
-$colorSecundario: #E4FEFF ;
-$colorTerciario: #E6F4F1 ;
+$palette:(
+    primario: #00A9C0,
+    secundario: #E6F4F1,
+    terciario: #FF8B42,
+    cuartenario: #cccccc,
+);
+
+
+@each $servicio in interiorismo, construccion, homestaging {
+    .imagen__#{$servicio}{
+        height: 25rem;
+        background: url(../assets/img/#{$servicio}.jpg) no-repeat center / cover;
+        border-radius: 8px;
+    }  
+};

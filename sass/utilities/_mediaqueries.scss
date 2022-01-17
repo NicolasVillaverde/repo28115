@@ -1,16 +1,11 @@
-@media screen and (max-width: 768px) {
-    .small__show{
-        display: unset;
+@mixin hide-show {
+    @media screen and (max-width: 768px) {
+    @content;
     }
+};
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;  
+    }   
+};
 
-    .large__show{
-        display: none;
-    }
-
-    .tarjeta__servicio{
-        margin-left: auto;
-        margin-top: -10%;
-        width: 90vw;
-
-    }
-}
