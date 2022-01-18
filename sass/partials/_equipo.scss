@@ -1,0 +1,6 @@
+@import "../utilities/variables";
+
+.equipo__card{
+    @extend .card;
+    background-color: map-get($palette , secundario );
+}

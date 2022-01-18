@@ -25,6 +25,12 @@
   border-radius: 8px;
 }
 
+.card, .servicios__card, .equipo__card {
+  border-radius: 1rem;
+  -webkit-box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
+          box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
+}
+
 .nav-item {
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
@@ -84,14 +90,32 @@
   padding-bottom: 15rem;
 }
 
-.servicios__section {
-  margin-top: -10%;
+.imagen__interiorismo {
+  height: 25rem;
+  background: url(../assets/img/interiorismo.jpg) no-repeat center/cover;
+  border-radius: 8px;
 }
 
-.servicios__card {
+.imagen__construccion {
+  height: 25rem;
+  background: url(../assets/img/construccion.jpg) no-repeat center/cover;
+  border-radius: 8px;
+}
+
+.imagen__homestaging {
+  height: 25rem;
+  background: url(../assets/img/homestaging.jpg) no-repeat center/cover;
+  border-radius: 8px;
+}
+
+.card, .servicios__card, .equipo__card {
   border-radius: 1rem;
   -webkit-box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
           box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
+}
+
+.servicios__section {
+  margin-top: -10%;
 }
 
 .servicios__card:hover {
@@ -107,6 +131,34 @@
 
 .testimonio__section {
   background-color: #cccccc;
+}
+
+.imagen__interiorismo {
+  height: 25rem;
+  background: url(../assets/img/interiorismo.jpg) no-repeat center/cover;
+  border-radius: 8px;
+}
+
+.imagen__construccion {
+  height: 25rem;
+  background: url(../assets/img/construccion.jpg) no-repeat center/cover;
+  border-radius: 8px;
+}
+
+.imagen__homestaging {
+  height: 25rem;
+  background: url(../assets/img/homestaging.jpg) no-repeat center/cover;
+  border-radius: 8px;
+}
+
+.card, .servicios__card, .equipo__card {
+  border-radius: 1rem;
+  -webkit-box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
+          box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
+}
+
+.equipo__card {
+  background-color: #E6F4F1;
 }
 
 .contacto__section {
@@ -129,6 +181,12 @@
   height: 25rem;
   background: url(../assets/img/homestaging.jpg) no-repeat center/cover;
   border-radius: 8px;
+}
+
+.card, .servicios__card, .equipo__card {
+  border-radius: 1rem;
+  -webkit-box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
+          box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
 }
 
 .tarjeta__servicio {
