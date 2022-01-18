@@ -1,10 +1,8 @@
-@import "../sass/utilities/variables";
-
 @import "../sass/base/reset";
 
-@import "../sass/base/typo";
+@import "../sass/utilities/variables";
 
-@import "../sass/base/components";
+@import "../sass/base/typo";
 
 @import "../sass/partials/nav";
 
@@ -23,8 +21,5 @@
 @import "../sass/partials/proyectos";
 
 
-
-
-@import "../sass/utilities/hide-show";
 
 @import "../sass/utilities/mediaqueries";
