@@ -25,24 +25,18 @@
   border-radius: 8px;
 }
 
-.card, .servicios__card, .equipo__card {
-  border-radius: 1rem;
-  -webkit-box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
-          box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
-}
-
 .nav-item {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 300;
 }
 
 .hero__text {
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 400;
 }
 
 .card-body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
 }
 
@@ -51,7 +45,7 @@
 }
 
 .testimonio__section {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
 }
 
@@ -60,7 +54,7 @@
 }
 
 .ubicacion__section {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
 }
 
@@ -68,13 +62,76 @@
   font-weight: 300;
 }
 
-.header__logo {
-  height: 20px;
+.equipo__section {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
 }
 
-.nav-link:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.equipo__section > p {
+  font-weight: 300;
+}
+
+.contacto__section {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.contacto__section > p {
+  font-weight: 300;
+}
+
+.error__section {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.error__section > p {
+  font-weight: 300;
+}
+
+.card, .servicios__card, .equipo__card {
+  border-radius: 1rem;
+  -webkit-box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
+          box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
+}
+
+.hero__button {
+  background: transparent;
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.hero__button::after {
+  content: "";
+  position: absolute;
+  background: #ff8b42;
+  height: 0.5em;
+  width: 65%;
+  left: 0;
+  top: 60%;
+  z-index: -1;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.91, 0, 0.55, 1.64);
+  transition: -webkit-transform 250ms cubic-bezier(0.91, 0, 0.55, 1.64);
+  transition: transform 250ms cubic-bezier(0.91, 0, 0.55, 1.64);
+  transition: transform 250ms cubic-bezier(0.91, 0, 0.55, 1.64), -webkit-transform 250ms cubic-bezier(0.91, 0, 0.55, 1.64);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.hero__button:hover::after {
+  -webkit-transform: scale(1.5, 3.5);
+          transform: scale(1.5, 3.5);
+}
+
+.backToTop {
+  position: absolute;
+  height: 2rem;
+  right: 10vw;
+}
+
+.header__logo {
+  height: 20px;
 }
 
 .hero {
@@ -108,14 +165,13 @@
   border-radius: 8px;
 }
 
-.card, .servicios__card, .equipo__card {
-  border-radius: 1rem;
-  -webkit-box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
-          box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
-}
-
 .servicios__section {
   margin-top: -10%;
+}
+
+.servicios__card {
+  -webkit-transition: all 50ms;
+  transition: all 50ms;
 }
 
 .servicios__card:hover {
@@ -124,13 +180,23 @@
 }
 
 .servicios__button {
-  background-color: #00A9C0;
+  background-color: #00a9c0;
   text-transform: uppercase;
   color: white;
 }
 
+.servicios__button:hover {
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+}
+
 .testimonio__section {
   background-color: #cccccc;
+}
+
+.ubicacion__tittle--border {
+  width: 50%;
+  border-bottom: solid 0.25em #ff8b42;
 }
 
 .imagen__interiorismo {
@@ -151,14 +217,8 @@
   border-radius: 8px;
 }
 
-.card, .servicios__card, .equipo__card {
-  border-radius: 1rem;
-  -webkit-box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
-          box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
-}
-
 .equipo__card {
-  background-color: #E6F4F1;
+  background-color: #e6f4f1;
 }
 
 .contacto__section {
@@ -183,14 +243,8 @@
   border-radius: 8px;
 }
 
-.card, .servicios__card, .equipo__card {
-  border-radius: 1rem;
-  -webkit-box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
-          box-shadow: 8px 9px 19px -3px rgba(0, 0, 0, 0.15);
-}
-
 .tarjeta__servicio {
-  background-color: #E6F4F1;
+  background-color: #e6f4f1;
   margin-left: -5%;
   border-radius: 8px;
   padding: 1rem;
@@ -206,16 +260,37 @@
   }
 }
 
-.small__show {
-  display: none;
+.proyecto__image--link:hover {
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+}
+
+.proyecto__image--item {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
-  .small__show {
-    display: unset;
-  }
-  .large__show {
+  .proyectos__galery {
     display: none;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .proyectos__carousel {
+    display: none;
+  }
+}
+
+.error__section {
+  height: 100vh;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+.error__icon {
+  font-size: 10em;
+}
+
+.error__tittle {
+  font-size: 5em;
 }
 /*# sourceMappingURL=main.css.map */

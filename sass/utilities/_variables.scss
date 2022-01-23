@@ -1,20 +1,15 @@
-$palette:(
-    primario: #00A9C0,
-    secundario: #E6F4F1,
-    terciario: #FF8B42,
+$palette: (
+    primario: #00a9c0,
+    secundario: #e6f4f1,
+    terciario: #ff8b42,
     cuartenario: #cccccc,
+    acento: tomato,
 );
 
-
 @each $servicio in interiorismo, construccion, homestaging {
-    .imagen__#{$servicio}{
+    .imagen__#{$servicio} {
         height: 25rem;
         background: url(../assets/img/#{$servicio}.jpg) no-repeat center / cover;
         border-radius: 8px;
-    }  
-};
-
-.card{
-    border-radius: 1rem;
-    box-shadow: 8px 9px 19px -3px rgba(0,0,0,0.15);
+    }
 }
