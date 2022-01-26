@@ -1,6 +1,12 @@
 @import "../utilities/variables";
 
-.equipo__card{
+.equipo__card {
     @extend .card;
-    background-color: map-get($palette , secundario );
+    background-color: map-get($palette, secundario);
+}
+
+.equipo__integrante {
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
 }

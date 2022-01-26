@@ -44,6 +44,10 @@
   font-weight: 300;
 }
 
+.card-body > a {
+  font-weight: 400;
+}
+
 .testimonio__section {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -175,19 +179,27 @@
 }
 
 .servicios__card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.015);
+          transform: scale(1.015);
+}
+
+@media screen and (max-width: 768px) {
+  .servicios__image {
+    width: 80%;
+  }
 }
 
 .servicios__button {
   background-color: #00a9c0;
   text-transform: uppercase;
-  color: white;
+  color: black;
+  font-weight: 500;
 }
 
 .servicios__button:hover {
-  -webkit-filter: brightness(0.6);
-          filter: brightness(0.6);
+  background-color: #00a9c0;
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
 }
 
 .testimonio__section {
@@ -219,6 +231,15 @@
 
 .equipo__card {
   background-color: #e6f4f1;
+}
+
+@media screen and (max-width: 768px) {
+  .equipo__integrante {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .contacto__section {
@@ -255,18 +276,32 @@
 @media screen and (max-width: 768px) {
   .tarjeta__servicio {
     margin-left: auto;
-    margin-top: -10%;
-    width: 90vw;
+    margin-top: -20%;
+    width: 95vw;
   }
 }
 
 .proyecto__image--link:hover {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   -webkit-filter: brightness(0.6);
           filter: brightness(0.6);
 }
 
+.proyecto__image--link:hover .proyecto__icon {
+  opacity: 1;
+}
+
 .proyecto__image--item {
   width: 100%;
+}
+
+.proyecto__icon {
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 45%;
+  font-size: 2.5em;
 }
 
 @media screen and (max-width: 768px) {

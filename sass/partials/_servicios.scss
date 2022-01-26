@@ -8,15 +8,23 @@
     @extend .card;
     transition: all 50ms;
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.015);
+    }
+}
+
+.servicios__image {
+    @media screen and (max-width: 768px) {
+        width: 80%;
     }
 }
 
 .servicios__button {
     background-color: map-get($palette, primario);
     text-transform: uppercase;
-    color: white;
+    color: black;
+    font-weight: 500;
     &:hover {
-        filter: brightness(0.6);
+        background-color: map-get($palette, primario);
+        filter: brightness(1.1);
     }
 }
